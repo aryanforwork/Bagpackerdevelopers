@@ -1,0 +1,6 @@
+{
+  "name": "@bagpackers/db",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Database migrations and Supabase CLI config for Bagpackers Developers"
+}

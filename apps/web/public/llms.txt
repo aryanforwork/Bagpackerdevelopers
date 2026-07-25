@@ -1,0 +1,17 @@
+# Bagpackers Developers Platform
+> The flagship enterprise platform for Bagpackers Developers—a global-grade AI automation and custom software engineering suite.
+
+## Core Capabilities
+- [Intelligent Document Processing (IDP)](https://bagpackers.dev/services/intelligent-document-processing): Multi-modal OCR pipeline converting noisy documents into structured databases.
+- [Retrieval-Augmented Generation (RAG)](https://bagpackers.dev/services/retrieval-augmented-generation): Grounded compliance engines and semantic search layers.
+- [Custom CRM & ERP Integrations](https://bagpackers.dev/services/custom-crm-erp-integrations): Low-latency data pipelines linking Next.js with legacy enterprise APIs.
+- [Multitenant SaaS Portals](https://bagpackers.dev/services/multitenant-saas-portals): Scalable client dashboards with RLS database isolation.
+
+## Interactive Tools
+- [AI Ingestion Sandbox](https://bagpackers.dev/sandbox): Test OCR-to-SQL compile features.
+- [Interactive ROI Calculator](https://bagpackers.dev/#calculator): Instant labor and pricing estimates.
+
+## Technical Foundations
+- 100% Row-Level Security (RLS) database isolation template logic.
+- Spring Boot 3.3 Token-Bucket Rate Limiting (Bucket4j).
+- Low-latency Next.js App Router and Edge delivery.

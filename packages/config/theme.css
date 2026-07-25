@@ -1,0 +1,18 @@
+@theme {
+  /* Current dark, telemetry-style palette */
+  --color-background-dark: #09090B;
+  --color-card-dark: #18181B;
+  --color-primary-violet: #3B82F6;
+  --color-primary-hover: #2563EB;
+  --color-accent-cyan: #60A5FA;
+  --color-success-green: #10B891;
+  --color-warning-gold: #F59E0B;
+  --color-danger-red: #EF4444;
+  --color-border-dark: #27272A;
+  
+  /* Nomad secondary accent palette */
+  --color-nomad-terracotta: #C1622C;
+  --color-nomad-canvas: #EDE3D2;
+  --color-nomad-teal: #12403D;
+  --color-nomad-sunset: #E8823A;
+}

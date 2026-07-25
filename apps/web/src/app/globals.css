@@ -1,0 +1,93 @@
+@import "tailwindcss";
+@import "@bagpackers/config/theme.css";
+
+@theme {
+  --font-sans: var(--font-geist-sans), system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
+}
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #09090B;
+  --primary-green: #10B891;
+  --accent-cyan: #059669;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFAFA;
+}
+::-webkit-scrollbar-thumb {
+  background: #E4E4E7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10B891;
+}
+
+/* Premium Card & Panels styling */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(228, 228, 231, 0.8);
+  border-radius: 16px;
+  backdrop-filter: blur(16px);
+}
+
+.glass-panel-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: rgba(16, 184, 145, 0.4);
+  box-shadow: 0 10px 30px -10px rgba(16, 184, 145, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Custom Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #09090B 0%, #71717A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #10B891 0%, #059669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Alert Boxes */
+.alert-success {
+  background: rgba(16, 184, 145, 0.08);
+  border: 1px solid rgba(16, 184, 145, 0.2);
+  color: #10B891;
+}
+
+.alert-warning {
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  color: #F59E0B;
+}
+
+.alert-danger {
+  background: rgba(239, 68, 68, 0.08);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  color: #EF4444;
+}
+
+.alert-info {
+  background: rgba(34, 211, 238, 0.08);
+  border: 1px solid rgba(34, 211, 238, 0.2);
+  color: #60A5FA;
+}

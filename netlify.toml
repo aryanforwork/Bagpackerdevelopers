@@ -1,0 +1,27 @@
+# Netlify Configuration File for Bagpackers Developers Platform
+
+[build]
+  # The path to the directory where Netlify will run npm install and npm run build
+  base = "frontend"
+
+  # The build command to run inside the base directory
+  command = "npm run build"
+
+  # The directory that contains the deploy-ready static files after build finishes
+  publish = ".next"
+
+[build.environment]
+  # Set Node.js version for Netlify build environment
+  NODE_VERSION = "20"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+[[plugins]]
+  # Next.js Runtime integration for Netlify
+  package = "@netlify/plugin-nextjs"
+
+# Optional: Configuration for standard headers/redirects if needed
+[[redirects]]
+  from = "/api/*"
+  to = "https://api.bagpackers.dev/api/:splat"
+  status = 200
+  force = true
