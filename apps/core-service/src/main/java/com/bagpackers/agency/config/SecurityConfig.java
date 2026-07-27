@@ -29,7 +29,7 @@ public class SecurityConfig {
         http
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(AbstractHttpConfigurer::disable)
-            .addFilterBefore(rateLimitingFilter, AdminTokenFilter.class)
+            .addFilterBefore(rateLimitingFilter, org.springframework.security.web.context.SecurityContextHolderFilter.class)
             .addFilterBefore(adminTokenFilter, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter.class)
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers(
