@@ -32,7 +32,7 @@ export default function SandboxPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(sandboxSchema) }}
       />
-      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 space-y-12">
+      <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 space-y-12">
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-[#10B891]/10 border border-[#10B891]/20 text-[#10B891] mb-2">

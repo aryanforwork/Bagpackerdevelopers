@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Link from "next/link";
+import Image from "next/image";
 import CurrentYear from "@/components/CurrentYear";
 import FooterCity from "@/components/FooterCity";
 import Script from "next/script";
@@ -70,12 +71,16 @@ export default function RootLayout({
         
         {/* Multi-column Rebuilt Footer */}
         <footer className="border-t border-zinc-800 bg-[#09090B] py-16 px-6 md:px-12 text-zinc-400">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-10">
+          <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-10">
             {/* Column 1: Brand & Logo */}
             <div className="md:col-span-4 space-y-4">
-              <span className="font-extrabold text-lg text-white tracking-tight">
-                Bagpacker<span className="text-[#10B891] font-medium">developers</span>
-              </span>
+              <Image
+                src="/web-logo.png"
+                alt="Bagpacker Developers"
+                width={220}
+                height={220}
+                className="h-20 w-auto object-contain brightness-0 invert opacity-90"
+              />
               <p className="text-xs text-zinc-500 leading-relaxed max-w-sm">
                 A global, remote-first software engineering collective building high-performance AI automation pipelines, Next.js client systems, and secure Spring Boot backends.
               </p>
@@ -126,7 +131,7 @@ export default function RootLayout({
             </div>
           </div>
 
-          <div className="max-w-6xl mx-auto border-t border-zinc-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
+          <div className="max-w-[1440px] mx-auto border-t border-zinc-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-zinc-500">
             <p>© <CurrentYear /> Bagpackers Developers. All rights reserved. Platform Class: Confidential Enterprise Codebase.</p>
             <FooterCity />
           </div>

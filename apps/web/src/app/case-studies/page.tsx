@@ -85,7 +85,7 @@ export default async function CaseStudiesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
       />
-      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 space-y-12">
+      <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 space-y-12">
         {/* Title */}
         <div className="text-center md:text-left space-y-4 max-w-2xl">
           <h1 className="text-3xl md:text-5xl font-black text-zinc-900 tracking-tight">

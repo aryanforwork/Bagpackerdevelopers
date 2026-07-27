@@ -96,7 +96,7 @@ export default function ServicesPage() {
 
       <main className="min-h-screen bg-[#FAFAFA] text-zinc-700 antialiased pb-20 overflow-x-hidden">
         {/* Navigation Breadcrumb Tracker */}
-        <nav className="max-w-6xl mx-auto px-6 pt-8 text-[10px] font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-[0.2em]">
+        <nav className="max-w-[1440px] mx-auto px-6 pt-8 text-[10px] font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-[0.2em]">
           <Link href="/" className="hover:text-[#10B891] transition-colors">Home</Link>
           <span>/</span>
           <span className="text-zinc-900">Services</span>
@@ -133,10 +133,10 @@ export default function ServicesPage() {
           </motion.p>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* Categories Grid */}
-        <section className="max-w-6xl mx-auto px-6 py-20 space-y-16">
+        <section className="max-w-[1440px] mx-auto px-6 py-20 space-y-16">
           {categories.map((cat, idx) => (
             <motion.div
               key={idx}

@@ -73,7 +73,7 @@ export default function DigitalMarketingPage() {
 
       <main className="min-h-screen bg-[#FAFAFA] text-zinc-600 antialiased selection:bg-[#10B891]/30 selection:text-zinc-900 pb-20 overflow-x-hidden">
         {/* Navigation Breadcrumb Tracker */}
-        <nav className="max-w-6xl mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
+        <nav className="max-w-[1440px] mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
           <Link href="/" className="hover:text-[#10B891] transition-colors">Home</Link>
           <span>/</span>
           <Link href="/services" className="hover:text-[#10B891] transition-colors">Services</Link>
@@ -82,7 +82,7 @@ export default function DigitalMarketingPage() {
         </nav>
 
         {/* Hero Section */}
-        <section className="max-w-6xl mx-auto px-6 pt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <section className="max-w-[1440px] mx-auto px-6 pt-16 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 space-y-6 text-left">
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -132,10 +132,10 @@ export default function DigitalMarketingPage() {
           </motion.div>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* Sub-routes Display Section */}
-        <section className="max-w-6xl mx-auto px-6 py-20">
+        <section className="max-w-[1440px] mx-auto px-6 py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {subroutes.map((route, idx) => (
               <motion.div
@@ -184,7 +184,7 @@ export default function DigitalMarketingPage() {
         </section>
 
         {/* Back Link */}
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="max-w-[1440px] mx-auto px-6 text-center">
           <Link href="/services" className="inline-flex items-center gap-2 text-xs font-bold text-zinc-700 hover:text-[#10B891] transition-colors">
             <ArrowLeft size={14} />
             Back to Category Catalog

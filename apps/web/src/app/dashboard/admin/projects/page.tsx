@@ -199,7 +199,7 @@ export default function AdminProjectsPage() {
 
   return (
     <div className="flex-1 bg-[#FAFAFA] text-zinc-950 p-8 md:p-12 relative min-h-screen">
-      <div className="max-w-6xl mx-auto space-y-8">
+      <div className="max-w-[1440px] mx-auto space-y-8">
         {/* Breadcrumb */}
         <div>
           <Link

@@ -407,6 +407,38 @@ export async function fetchDevelopersAction() {
   }
 }
 
+const fallbackSkills = [
+  { name: "Next.js", category: "Frontend" },
+  { name: "React", category: "Frontend" },
+  { name: "TypeScript", category: "Languages" },
+  { name: "WebGL / Three.js", category: "Frontend" },
+  { name: "Tailwind CSS", category: "Frontend" },
+  { name: "Java", category: "Languages" },
+  { name: "Spring Boot", category: "Backend" },
+  { name: "PostgreSQL", category: "Databases" },
+  { name: "Supabase", category: "Backend" },
+  { name: "Python", category: "Languages" },
+  { name: "Docker", category: "DevOps" },
+  { name: "AWS", category: "Cloud" },
+  { name: "Search Engine Optimization", category: "Marketing" },
+  { name: "Paid Advertising & Funnels", category: "Marketing" },
+  { name: "Marketing Automation", category: "Marketing" }
+];
+
+const fallbackServices = [
+  { slug: "intelligent-document-processing", title: "Intelligent Document Processing (IDP)", category: "AI & Automation" },
+  { slug: "retrieval-augmented-generation", title: "Semantic RAG Systems", category: "AI & Automation" },
+  { slug: "custom-crm-erp-integrations", title: "Custom CRM & ERP Integrations", category: "Enterprise" },
+  { slug: "multitenant-saas-portals", title: "Multitenant SaaS Portals", category: "Enterprise" },
+  { slug: "iot-logistics-automation", title: "IoT & Logistics Automation", category: "Industrial" },
+  { slug: "computer-vision-quality-control", title: "Computer Vision Quality Control", category: "Industrial" },
+  { slug: "predictive-analytics-dashboards", title: "Predictive Analytics Dashboards", category: "Business" },
+  { slug: "regulatory-compliance-rag", title: "Regulatory Compliance RAG", category: "Business" },
+  { slug: "headless-cms-static-sites", title: "Headless CMS & Static Sites", category: "Brand" },
+  { slug: "immersive-webgl-portals", title: "Immersive WebGL Portals", category: "Brand" },
+  { slug: "digital-marketing", title: "Digital Marketing Solutions", category: "Marketing" }
+];
+
 /**
  * Server Action: Fetch all skills taxonomy
  */
@@ -417,10 +449,14 @@ export async function fetchSkillsTaxonomyAction() {
       .from("skills_taxonomy")
       .select("name, category")
       .order("name", { ascending: true });
-    if (error) return { success: false, error: error.message };
+    if (error || !data || data.length === 0) {
+      console.warn("Using fallback skills taxonomy due to database connection issue:", error?.message);
+      return { success: true, data: fallbackSkills };
+    }
     return { success: true, data };
   } catch (err: any) {
-    return { success: false, error: err.message };
+    console.warn("Using fallback skills taxonomy due to database error:", err.message);
+    return { success: true, data: fallbackSkills };
   }
 }
 
@@ -434,10 +470,14 @@ export async function fetchServicesTaxonomyAction() {
       .from("services")
       .select("slug, title, category")
       .order("title", { ascending: true });
-    if (error) return { success: false, error: error.message };
+    if (error || !data || data.length === 0) {
+      console.warn("Using fallback services taxonomy due to database connection issue:", error?.message);
+      return { success: true, data: fallbackServices };
+    }
     return { success: true, data };
   } catch (err: any) {
-    return { success: false, error: err.message };
+    console.warn("Using fallback services taxonomy due to database error:", err.message);
+    return { success: true, data: fallbackServices };
   }
 }
 

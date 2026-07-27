@@ -94,7 +94,7 @@ export default function Home() {
     <div className="flex flex-col pb-24 overflow-x-hidden bg-[#FAFAFA] text-zinc-900">
       
       {/* 1. Hero Section (Light Mode) */}
-      <section className="relative overflow-hidden pt-32 pb-20 px-6 md:px-12 max-w-7xl mx-auto w-full text-center md:text-left grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <section className="relative overflow-hidden pt-32 pb-20 px-6 md:px-12 max-w-[1440px] mx-auto w-full text-center md:text-left grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
         {/* Subtle mesh background highlight */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/5 via-transparent to-transparent -z-10 pointer-events-none" />
 
@@ -199,7 +199,7 @@ export default function Home() {
 
       {/* 2. Integrated Telemetry Matrix (Logo Wall) (Light Mode) */}
       <section className="border-y border-zinc-200 py-10 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 flex flex-col md:flex-row md:items-center justify-between gap-8">
           <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-zinc-400">
             INTEGRATED TELEMETRY MATRIX
           </span>
@@ -214,7 +214,7 @@ export default function Home() {
       </section>
 
       {/* 3. Services Grid ("Create. Code. Scale.") (Light Mode) */}
-      <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-24">
+      <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -281,7 +281,7 @@ export default function Home() {
 
       {/* 3.5 Brand Story Section ("A Global Collective, Not an Office") */}
       <section className="border-t border-zinc-200 py-24 bg-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           {/* Left storytelling details */}
           <div className="lg:col-span-6 space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-50 border border-zinc-200 text-xs font-semibold text-[#E8823A] shadow-sm">
@@ -357,7 +357,7 @@ export default function Home() {
         </div>
 
         {/* 4 Pillars Grid */}
-        <div className="max-w-7xl mx-auto px-6 md:px-12 mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-[1440px] mx-auto px-6 md:px-12 mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="p-6 bg-zinc-50 border border-zinc-200/60 rounded-2xl flex flex-col justify-between">
             <h4 className="font-extrabold text-zinc-950 text-sm tracking-wide uppercase mb-2">Remote-First Engineering</h4>
             <p className="text-xs text-zinc-400 leading-relaxed">No static physical desks. We deploy cloud resources and direct collaboration pipelines globally.</p>
@@ -379,7 +379,7 @@ export default function Home() {
 
       {/* 4. Testimonials Slider ("Collaborative to the core") (Light Mode) */}
       <section className="bg-zinc-50 border-y border-zinc-200 py-24">
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-12">
+        <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -447,7 +447,7 @@ export default function Home() {
 
       {/* 5. Stats & Telemetry Section (Dark Mode Enclosure) */}
       <section className="bg-[#09090B] text-zinc-300 py-24 border-y border-zinc-800/50">
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -514,7 +514,7 @@ export default function Home() {
 
       {/* 6. FAQ Section (Dark Mode Enclosure) */}
       <section className="bg-[#09090B] text-zinc-300 py-24 border-b border-zinc-800/50">
-        <div className="max-w-7xl mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <div className="max-w-[1440px] mx-auto w-full px-6 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-4 space-y-4">
             <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-[#10B891]">
               FAQ
@@ -536,7 +536,7 @@ export default function Home() {
       </section>
 
       {/* 7. ROI Calculator Section (Light Mode) */}
-      <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-24">
+      <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-24">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

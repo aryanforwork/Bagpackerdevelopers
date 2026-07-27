@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Terminal, LayoutDashboard, Globe, MessageSquare, LogOut } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -62,14 +63,19 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
   return (
     <div className="min-h-screen bg-[#09090B] text-[#CBD5E1] flex flex-col font-sans">
       {/* Admin Navbar */}
-      <header className="border-b border-white/5 bg-[#18181B]/60 backdrop-blur-md sticky top-0 z-50 px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-white/5 bg-[#18181B]/60 backdrop-blur-md sticky top-0 z-50 px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="p-2 bg-[#3B82F6]/10 border border-[#3B82F6]/30 rounded-lg text-[#3B82F6]">
-            <Terminal size={18} />
-          </div>
-          <div>
-            <h1 className="text-sm font-bold text-white tracking-tight">BAGPACKERS AI</h1>
-            <p className="text-[10px] text-gray-400 font-mono uppercase tracking-wider">Control Cockpit</p>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/web-logo.png"
+              alt="Bagpacker Developers Logo"
+              width={160}
+              height={40}
+              className="h-10 w-auto object-contain brightness-0 invert opacity-95"
+            />
+          </Link>
+          <div className="border-l border-white/10 pl-3">
+            <p className="text-[10px] text-blue-400 font-mono uppercase tracking-widest font-bold">Control Cockpit</p>
           </div>
         </div>
 
@@ -105,7 +111,7 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
       </header>
 
       {/* Main Admin Panel body */}
-      <main className="flex-1 max-w-7xl mx-auto w-full p-6 md:p-12">
+      <main className="flex-1 max-w-[1440px] mx-auto w-full p-6 md:p-12">
         {/* Mobile Nav */}
         <div className="md:hidden flex gap-2 mb-6 border-b border-white/5 pb-4">
           {navItems.map((item) => {

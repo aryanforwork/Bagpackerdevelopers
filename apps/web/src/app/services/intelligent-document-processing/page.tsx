@@ -53,7 +53,7 @@ export default function IDPServicePage() {
       <main className="min-h-screen bg-[#FAFAFA] text-zinc-600 antialiased selection:bg-[#10B891]/30 selection:text-zinc-900 pb-20">
         
         {/* Navigation Breadcrumb Tracker */}
-        <nav className="max-w-6xl mx-auto px-6 pt-8 text-xs font-semibold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
+        <nav className="max-w-[1440px] mx-auto px-6 pt-8 text-xs font-semibold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
           <Link href="/" className="hover:text-[#10B891] transition-colors">Home</Link>
           <span>/</span>
           <span className="text-[#10B891]">Services</span>
@@ -89,10 +89,10 @@ export default function IDPServicePage() {
           </div>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* The Core Technical Pipeline Breakdown */}
-        <section className="max-w-6xl mx-auto px-6 py-20 space-y-12">
+        <section className="max-w-[1440px] mx-auto px-6 py-20 space-y-12">
           <div className="text-center space-y-3">
             <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-zinc-900">
               The Multimodal OCR & Normalization Architecture
@@ -159,7 +159,7 @@ export default function IDPServicePage() {
           </div>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* Concrete Operational Value Matrix */}
         <section className="max-w-4xl mx-auto px-6 py-20 space-y-10">

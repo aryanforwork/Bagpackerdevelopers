@@ -86,7 +86,7 @@ export default function DevelopersDirectoryPage() {
 
   return (
     <div className="flex-1 bg-[#FAFAFA] text-zinc-950 p-8 md:p-12 min-h-screen">
-      <div className="max-w-6xl mx-auto space-y-12">
+      <div className="max-w-[1440px] mx-auto space-y-12">
         {/* Title */}
         <div className="text-center space-y-3 max-w-xl mx-auto">
           <span className="text-[10px] font-mono text-[#10B891] font-bold uppercase tracking-wider">Verified Nodes</span>

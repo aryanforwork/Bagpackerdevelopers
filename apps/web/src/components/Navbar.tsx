@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { Terminal, Shield, Activity, ChevronDown, ArrowRight, ArrowUpRight, User, LogOut, LayoutDashboard } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -98,21 +99,25 @@ export default function Navbar() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-          className="pointer-events-auto w-full max-w-6xl p-1 bg-white/70 backdrop-blur-xl border border-zinc-200/80 rounded-full shadow-lg flex items-center justify-between"
+          className="pointer-events-auto w-full max-w-[1440px] p-1 bg-white/70 backdrop-blur-xl border border-zinc-200/80 rounded-full shadow-lg flex items-center justify-between"
         >
-          <div className="w-full bg-zinc-50/40 rounded-full px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between border border-white/50">
+          <div className="w-full bg-zinc-50/40 rounded-full px-4 sm:px-6 py-1 sm:py-1.5 flex items-center justify-between border border-white/50">
             {/* Logo / Brand */}
             <Link href="/" className="flex items-center gap-2.5 group relative z-50">
               <motion.div 
-                whileHover={{ scale: 1.05, rotate: 2 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#10B891] to-[#059669] flex items-center justify-center shadow-lg shadow-emerald-500/10"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="flex items-center"
               >
-                <Terminal size={18} strokeWidth={1.25} className="text-white" />
+                <Image
+                  src="/web-logo.png"
+                  alt="Bagpacker Developers"
+                  width={220}
+                  height={55}
+                  className="h-14 w-auto object-contain"
+                  priority
+                />
               </motion.div>
-              <span className="font-extrabold text-lg sm:text-xl tracking-tight text-zinc-900 group-hover:text-[#10B891] transition-colors font-sans whitespace-nowrap">
-                Bagpacker<span className="text-[#10B891] font-medium">developers</span>
-              </span>
             </Link>
 
             {/* Desktop Nav Links */}

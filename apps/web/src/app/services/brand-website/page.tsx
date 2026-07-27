@@ -51,7 +51,7 @@ export default function BrandWebsitePage() {
 
       <main className="min-h-screen bg-[#FAFAFA] text-zinc-600 antialiased selection:bg-[#10B891]/30 selection:text-zinc-900 pb-20 overflow-x-hidden">
         {/* Navigation Breadcrumb Tracker */}
-        <nav className="max-w-6xl mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
+        <nav className="max-w-[1440px] mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
           <Link href="/" className="hover:text-[#10B891] transition-colors">Home</Link>
           <span>/</span>
           <Link href="/services" className="hover:text-[#10B891] transition-colors">Services</Link>
@@ -90,7 +90,7 @@ export default function BrandWebsitePage() {
           </motion.p>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* Sub-routes Display Section */}
         <section className="max-w-5xl mx-auto px-6 py-20 space-y-8">
@@ -142,7 +142,7 @@ export default function BrandWebsitePage() {
         </section>
 
         {/* Back Link */}
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="max-w-[1440px] mx-auto px-6 text-center">
           <Link href="/services" className="inline-flex items-center gap-2 text-xs font-bold text-zinc-700 hover:text-[#10B891] transition-colors">
             <ArrowLeft size={14} />
             Back to Category Catalog

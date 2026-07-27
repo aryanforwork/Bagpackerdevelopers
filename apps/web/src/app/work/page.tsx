@@ -114,7 +114,7 @@ export default function WorkPage() {
       
       <div className="min-h-screen bg-[#FAFAFA] text-zinc-600 pb-24 overflow-x-hidden font-sans">
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-24 pb-12 px-6 md:px-12 max-w-7xl mx-auto w-full text-center md:text-left">
+        <section className="relative overflow-hidden pt-24 pb-12 px-6 md:px-12 max-w-[1440px] mx-auto w-full text-center md:text-left">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-[#10B891]/5 via-transparent to-transparent -z-10 pointer-events-none" />
           
           <motion.div
@@ -137,7 +137,7 @@ export default function WorkPage() {
         </section>
 
         {/* Portfolio Showcase Grid */}
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-12">
+        <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 animate-fade-in">
             {/* Dynamic DB Portfolios */}
             {dynamicPortfolios.map((item, idx) => (
@@ -257,7 +257,7 @@ export default function WorkPage() {
         </section>
 
         {/* Testimonials Section */}
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200/50">
+        <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200/50">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

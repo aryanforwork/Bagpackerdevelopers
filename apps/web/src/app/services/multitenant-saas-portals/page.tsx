@@ -81,7 +81,7 @@ export default function SaaSPortalsServicePage() {
       <main className="min-h-screen bg-[#FAFAFA] text-zinc-600 antialiased selection:bg-[#10B891]/30 selection:text-zinc-900 pb-20 overflow-x-hidden">
         
         {/* Navigation Breadcrumb Tracker */}
-        <nav className="max-w-6xl mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
+        <nav className="max-w-[1440px] mx-auto px-6 pt-8 text-xs font-bold text-zinc-500 flex items-center gap-1.5 uppercase tracking-wider">
           <Link href="/" className="hover:text-[#10B891] transition-colors">Home</Link>
           <span>/</span>
           <span className="hover:text-[#10B891]">Services</span>
@@ -137,10 +137,10 @@ export default function SaaSPortalsServicePage() {
           </motion.div>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* The Core Technical Pipeline Breakdown */}
-        <section className="max-w-6xl mx-auto px-6 py-20 space-y-12">
+        <section className="max-w-[1440px] mx-auto px-6 py-20 space-y-12">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -187,7 +187,7 @@ export default function SaaSPortalsServicePage() {
           </div>
         </section>
 
-        <hr className="border-zinc-200 max-w-6xl mx-auto" />
+        <hr className="border-zinc-200 max-w-[1440px] mx-auto" />
 
         {/* Concrete Operational Value Matrix */}
         <section className="max-w-4xl mx-auto px-6 py-20 space-y-10">
@@ -242,7 +242,7 @@ export default function SaaSPortalsServicePage() {
         </section>
 
         {/* Back Link */}
-        <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="max-w-[1440px] mx-auto px-6 text-center">
           <Link href="/" className="inline-flex items-center gap-2 text-xs font-bold text-zinc-700 hover:text-[#10B891] transition-colors">
             <ArrowLeft size={14} />
             Back to Overview

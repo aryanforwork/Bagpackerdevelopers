@@ -99,7 +99,7 @@ export default function AboutPage() {
       
       <div className="min-h-screen bg-[#FAFAFA] text-zinc-700 pb-24 overflow-x-hidden font-sans flex flex-col gap-24">
         {/* Hero Section */}
-        <section className="relative overflow-hidden pt-24 pb-16 px-6 md:px-12 max-w-7xl mx-auto w-full text-center md:text-left">
+        <section className="relative overflow-hidden pt-24 pb-16 px-6 md:px-12 max-w-[1440px] mx-auto w-full text-center md:text-left">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-emerald-900/5 via-transparent to-transparent -z-10 pointer-events-none" />
           
           <motion.div
@@ -122,7 +122,7 @@ export default function AboutPage() {
         </section>
 
         {/* Core Values Section */}
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
+        <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +159,7 @@ export default function AboutPage() {
         </section>
 
         {/* Team Expertise Section */}
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
+        <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -227,7 +227,7 @@ export default function AboutPage() {
         </section>
 
         {/* Trust Vectors Section */}
-        <section className="max-w-7xl mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
+        <section className="max-w-[1440px] mx-auto w-full px-6 md:px-12 py-16 border-t border-zinc-200">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
